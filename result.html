@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+    <br>
+    <div>
+        <form action='/result' method="post">
+            <div class="container">
+            <h2><span>Chronic Kidney Disease Result</span></h2>
+            </div>
+        <br><br><br><br><br>
+        <!-- Result -->
+        <div class="false">
+			{% if prediction==1 %}
+        
+				<h2>Oops! 🙁<br><br>You have CHRONIC KIDNEY DISEASE.<br><br>Please Consult Doctor.</h2>
+                <br><br><br><br><br><br><br><br><br><br>
+			{% elif prediction==0 %}
+				<h2>🎉 Congratulations! 🎉<br><br>You DON'T have Chronic Kidney Disease.</h2>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			{% endif %}
+            
+        </form>
+        
+    </div>
+    
+    <style>
+        body {
+            background-image:url('/static/images/bgimage10.webp');
+            background-repeat: no-repeat;
+            color: azure;
+            background-size: 100% 100%;
+
+        }
+        .container {
+            font-style: italic;
+            color:black;
+            font-size: 35px;
+            margin-left: 330px;  
+        }
+        .false{
+            font-size: 20px;
+            color:black;
+            font-style: oblique;
+            margin-left: 280px;
+        }
+    </style>
+</body>
+</html>

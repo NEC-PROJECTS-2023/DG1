@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <br><br>
+    <h1 class="hello">Chronic Kidney Disease Recognition System</h1>
+    <div>
+        <form action="{{ url_for('predict') }}" method="POST">
+            <br><br>
+            <label id="hi"><b>Specific Gravity</b></label>
+            <input id="first" name="sg" placeholder="Ex: (1.005,1.010,1.015,1.020,1.025)" required="required">
+            <br><br>
+            <label id="hi"><b>Hyper Tension</b></label>
+            <input id="second" name="htn" placeholder="Yes = 1, No=0" required="required">
+            <br><br>
+            <label id="hi"><b>Hemoglobin</b></label>
+            <input id="third" name="hemo" placeholder="in gms" required="required">
+            <br><br>
+            <label id="hi"><b>Diabetes Mellitus</b></label>
+            <input id="fourth" name="dm" placeholder="Yes = 1, No=0" required="required">
+            <br><br>
+            <label id="hi"><b>Albumin</b></label>
+            <input id="fifth" name="al" placeholder="(0,1,2,3,4,5)" required="required">
+            <br><br>
+            <label id="hi"><b>Appetite</b></label>
+            <input id="sixth" name="appet" placeholder="Good = 1, Poor = 0" required="required">
+            <br><br>
+            <label id="hi"><b>Red Blood Cell Count</b></label>
+            <input id="seventh" name="rc" placeholder="in Millions/cmm" required="required"><br><br>
+            <label id="hi"><b>Pus Cell</b></label>
+            <input id="eight" name="pc" placeholder="Normal = 0, Abnormal = 1" required="required">
+            <br>
+            <br><br>
+            <button id="sub" type="submit "><b>Submit</b></button>
+            <br>
+            <br>
+        </form>
+    </div>
+
+<style>
+
+/* Background Image */
+body
+{
+background-image:url('/static/images/bgimage6.jpeg');
+height: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+.hello{
+    font-size: 40px;
+    font-style: italic;
+    margin-left: 270px;
+}
+        #hi {
+            color:black;
+            font-size:25px ;
+            font-style:oblique ;
+            margin-left: 300px;
+
+        }
+/* Box */
+        title {
+            color:black;
+            font-size: 20px;
+        }
+        #first {
+            border-radius: 14px;
+            height: 30px;
+            width: 300px;
+            font-size: 18px;
+            text-align: center;
+            color:black;
+            background: transparent;
+            margin-left:100px;
+            border-color: black;
+        }
+
+        #second {
+            border-radius: 14px;
+            height: 30px;
+            width: 300px;
+            font-size: 20px;
+            text-align: center;
+            color:black;
+            background: transparent;
+            margin-left:115px;
+            border-color: black;
+        }
+
+        #third {
+            border-radius: 14px;
+            height: 30px;
+            width: 300px;
+            font-size: 20px;
+            text-align: center;
+            color:black;
+            background: transparent;
+            margin-left:137px;
+            border-color: black;
+        }
+
+        #fourth {
+            border-radius: 14px;
+            height: 30px;
+            width: 300px;
+            font-size: 20px;
+            text-align: center;
+            color:black;
+            background: transparent;
+            margin-left:83px;
+            border-color: black;
+        }
+
+        #fifth {
+            border-radius: 14px;
+            height: 30px;
+            width: 300px;
+            font-size: 20px;
+            text-align: center;
+            color:black;
+            background: transparent;
+            margin-left:175px;
+            border-color: black;
+        }
+
+        #sixth {
+            border-radius: 14px;
+            height: 30px;
+            width: 300px;
+            font-size: 20px;
+            text-align: center;
+            color:black;
+            background: transparent;
+            margin-left:177px;
+            border-color: black;
+        }
+
+        #seventh {
+            border-radius: 14px;
+            height: 30px;
+            width: 300px;
+            font-size: 20px;
+            text-align: center;
+            color:black;
+            background: transparent;
+            margin-left:38px;
+            border-color: black;
+        }
+
+        #eight {
+            border-radius: 14px;
+            height: 30px;
+            width: 300px;
+            font-size: 20px;
+            text-align: center;
+            color:black;
+            background: transparent;
+            margin-left:172px;
+            border-color: black;
+    
+        }
+input,
+input::placeholder {
+color:rgb(29, 28, 28);
+font-size: 15px;
+
+}
+/* Submit Button */
+#sub {
+            width: 120px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+            background: none;
+            margin-left:470px;
+        }
+
+
+
+
+</style>
+
+
+</body>
+
+</html>
